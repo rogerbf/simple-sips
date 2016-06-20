@@ -1,0 +1,49 @@
+{
+  "name": "simple-sips",
+  "version": "1.0.0",
+  "description": "simplified scriptable image processing system",
+  "main": "./dist/index.js",
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6
+    }
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf dist",
+    "build": "babel --out-dir dist src"
+  },
+  "keywords": [
+    "sips",
+    "image"
+  ],
+  "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "0.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.10.1",
+    "babel-preset-es2015": "6.9.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerbf/simple-sips.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rogerbf/simple-sips/issues"
+  },
+  "homepage": "https://github.com/rogerbf/simple-sips#readme"
+}
