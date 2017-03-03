@@ -27,7 +27,9 @@ module.exports = ({ execFile, args }, options) =>
       .addAlias({ resampleWidth: `-resampleWidth` })
       .addAlias({ resampleHeight: `-resampleHeight` })
       .addAlias({ resampleHeightWidthMax: `Z` })
-      .addAlias({ addIcon: `i` })(options),
+      .addAlias({ addIcon: `i` })
+      .addAlias({ optimizeColorForSharing: `o` })
+      .addAlias({ help: `-help` })(options),
       (error, stdout, stderr) => {
         error
         ? reject(error)
