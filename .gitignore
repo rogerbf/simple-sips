@@ -1,2 +1,8 @@
 node_modules
-dist
+distribution
+.DS_Store
+package
+simple-sips*.tgz
+npm-debug.log
+.vscode
+coverage
