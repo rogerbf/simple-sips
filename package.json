@@ -25,6 +25,7 @@
     "babel-cli": "^6.23.0",
     "babel-jest": "^19.0.0",
     "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.2.0",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-stage-3": "^6.22.0",
     "chokidar-cli": "^1.2.0",
@@ -42,6 +43,6 @@
     "README.md"
   ],
   "dependencies": {
-    "options-to-args": "^0.0.1"
+    "options-to-args": "^1.0.1"
   }
 }
