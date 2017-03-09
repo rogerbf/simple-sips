@@ -1,8 +1,10 @@
-module.exports = ({ execFile, args }, options) =>
+module.exports = ({ execFile, args }, { imagefile, destination, options }) =>
   new Promise((resolve, reject) => {
     execFile(
       `sips`,
-      args(options),
+      args(options)
+      .concat(imagefile || [])
+      .concat(destination ? [ `--out`, destination ] : []),
       (error, stdout, stderr) => {
         error
         ? reject(error)
