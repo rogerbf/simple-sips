@@ -1,7 +1,7 @@
 {
   "name": "simple-sips",
   "version": "2.0.0",
-  "description": "",
+  "description": "query or modify raster image files and ColorSync ICC profiles",
   "main": "./distribution/index.js",
   "scripts": {
     "test": "jest --config .jest",
@@ -18,7 +18,16 @@
     "coverage": "jest --config .jest --coverage",
     "watch:coverage": "jest --config .jest --coverage --watch"
   },
-  "keywords": [],
+  "keywords": [
+    "sips",
+    "image manipulation",
+    "image",
+    "images",
+    "edit",
+    "query",
+    "icc",
+    "profiles"
+  ],
   "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
   "license": "MIT",
   "devDependencies": {
