@@ -1,11 +1,9 @@
 const { execFile } = require(`child_process`)
 
-const aliases = require(`./aliases`)
-const arrayParser = require(`./array-parser`)
 const args = (
   require(`options-to-args`)
-  .alias(aliases)
-  .behaviour(`array`, arrayParser)
+  .alias(require(`./aliases`))
+  .behaviour(`array`, require(`./array-parser`))
 )
 
 const sips = require(`./sips`)
