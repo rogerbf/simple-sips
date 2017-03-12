@@ -29,4 +29,11 @@ sips({
 ### `sips(config)`
 
 Returns a Promise. `config` is an object with the keys: `source`, `destination` and `options`.
-`options` gets parsed and passed on to sips.
+
+When using image query functions use an array to for multiple keys i.e.
+
+```javascript
+{
+  getProperty: [ `pixelHeight`, `pixelWidth` ]
+}
+```
