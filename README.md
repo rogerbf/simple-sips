@@ -6,8 +6,6 @@ From the sips manpage:
 
 > This tool is used to query or modify raster image files and ColorSync ICC profiles.
 
-All options are supported.
-
 ## usage
 
 ```javascript
