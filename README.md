@@ -30,10 +30,26 @@ sips({
 
 Returns a Promise. `config` is an object with the keys: `source`, `destination` and `options`.
 
-When using image query functions use an array to for multiple keys i.e.
+`source` - original image path
+
+`destination` - output path for the modified image
+
+`options` - object containing sips operations
+
+#### options object examples
+
+##### image query functions
 
 ```javascript
 {
   getProperty: [ `pixelHeight`, `pixelWidth` ]
+}
+```
+
+##### image modification functions
+
+```javascript
+{
+  setProperty: { description: 'A hotel', copyright: 'Lynyrd' }
 }
 ```
