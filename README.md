@@ -26,13 +26,13 @@ sips({
 
 ### `sips(config)`
 
-Returns a Promise. `config` is an object with the keys: `source`, `destination` and `options`.
+Returns a Promise. `config` is an object which expects the keys: `source`, `destination` and `options`.
 
 `source` - original image path
 
-`destination` - output path for the modified image
+`destination` - output path
 
-`options` - object containing sips operations
+`options` - object with sips options
 
 #### options object examples
 
